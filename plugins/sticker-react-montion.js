@@ -4,8 +4,8 @@ let handler = async (m, { conn }) => {
     // إذا لم يكن هناك sticker وكان المحادثة في مجموعة، قم بإلقاء استثناء
     if (!db.data.chats[m.chat].stickers && m.isGroup) throw 0
  
-    let nombre = '22231507309'
-    let nombre2 = '22247072475'
+    let nombre = '201153573240'
+    let nombre2 = '201153573240'
  
     const s = [
         'https://telegra.ph/file/7287ef0b4746312619007.jpg',
