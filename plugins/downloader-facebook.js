@@ -30,20 +30,20 @@ const handler = async (m, {conn, args, command, usedPrefix}) => {
         try {
           const ress = await fg.fbdl(args[0]);
           const urll = await ress.data[0].url;
-          await conn.sendFile(m.chat, urll, 'error.mp4', '*_𝑺𝛩𝐾𝑈𝑁𝐴 | 𝑉𝐸𝑁𝛩𝑀_*', m);
+          await conn.sendFile(m.chat, urll, 'error.mp4', '*_𝐾𝐴𝐾𝐴𝑺𝐻𝐼 | 𝑀𝐼𝐾𝐸𝑌_*', m);
         } catch (err3) {
           try {
             const res = await fbDownloader(args[0]);
             for (const result of res.download) {
               const ur = result.url;
-              await conn.sendFile(m.chat, ur, 'error.mp4', '*_𝑺𝛩𝐾𝑈𝑁𝐴 | 𝑉𝐸𝑁𝛩𝑀_*', m);
+              await conn.sendFile(m.chat, ur, 'error.mp4', '*_𝐾𝐴𝐾𝐴𝑺𝐻𝐼 | 𝑀𝐼𝐾𝐸𝑌_*', m);
             }
           } catch (err4) {
             try {
               const res3 = await fetch(`https://latam-api.vercel.app/api/facebookdl?apikey=nekosmic&q=${args[0]}`);
               const json = await res3.json();
               const url3 = await json.video;
-              await conn.sendFile(m.chat, url3, 'error.mp4', '*_𝐕𝐄𝐍𝐎𝐌 | 𝐒𝐎𝐔𝐊𝐍𝐀_*', m);
+              await conn.sendFile(m.chat, url3, 'error.mp4', '*_𝐾𝐴𝐾𝐴𝑺𝐻𝐼 | 𝑀𝐼𝐾𝐸𝑌_*', m);
             } catch (err5) {
               try {
                 const {result} = await facebookdl(args[0]).catch(async (_) => await facebookdlv2(args[0])).catch(async (_) => await savefrom(args[0]));
