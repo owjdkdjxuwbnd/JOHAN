@@ -1,7 +1,7 @@
 let handler = async (m, { conn, usedPrefix, command }) => {
   await conn.sendMessage(m.chat, {
    react: {
- text: "⚽",
+ text: "🏮",
  key: m.key,
    }
   })
@@ -11,7 +11,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 
 handler.help = ['ايديت_زو-رو']
 handler.tags = ['anime']
-handler.command = /^(editfoot)$/i
+handler.command = /^(ايديت)$/i
 handler.limit = false
 
 export default handler
