@@ -27,8 +27,15 @@ const dir = [
 'https://telegra.ph/file/cd611bb1e76ceac182de8.mp4',
 'https://telegra.ph/file/0c4046c6477431bbed40d.mp4',
 'https://telegra.ph/file/d84e53e96fb44ec4cbd23.mp4',
-'https://telegra.ph/file/1286e1bf83c9901308cd8.mp4',
-
+'https://telegra.ph/file/1286e1bf83c9901308cd8.mp4', 
+'https://telegra.ph/file/6d07aa99493e66b23c236.mp4', 
+'https://telegra.ph/file/8a2050122f2c1b92f0709.mp4', 
+'https://telegra.ph/file/5e2beb8168f08cacb78cb.mp4', 
+'https://telegra.ph/file/1378087748b7cb0ab03aa.mp4', 
+'https://telegra.ph/file/11db0441667135adedfb8.mp4', 
+'https://telegra.ph/file/5bfca85a339866921829d.mp4', 
+'https://telegra.ph/file/3da0f258090f4895b98cb.mp4', 
+'https://telegra.ph/file/6d07aa99493e66b23c236.mp4', 
 
 
 '',
