@@ -36,7 +36,14 @@ const dir = [
 'https://telegra.ph/file/5bfca85a339866921829d.mp4', 
 'https://telegra.ph/file/3da0f258090f4895b98cb.mp4', 
 'https://telegra.ph/file/6d07aa99493e66b23c236.mp4', 
-
+'https://telegra.ph/file/be173d81570d9c9eb3805.mp4', 
+'https://telegra.ph/file/9b2f9bf537f957ced14c1.mp4', 
+'https://telegra.ph/file/253ae92c0a3e04f2482c4.mp4', 
+'https://telegra.ph/file/4b3752321ce6296acd2ec.mp4', 
+'https://telegra.ph/file/1d95f84409472d2fded0a.mp4', 
+'https://telegra.ph/file/02a1d7e447d57804aaeb2.mp4', 
+'https://telegra.ph/file/ac6a784a501e0ccf38f2b.mp4', 
+'https://telegra.ph/file/bd57deaa5fd64f51c4073.mp4', 
 
 '',
 ]
