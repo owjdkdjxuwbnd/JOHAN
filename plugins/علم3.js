@@ -8,13 +8,13 @@ let handler = async (m, { conn, command, usedPrefix }) => {
         conn.reply(m.chat, '⚡️┃لم يتم الاجابة علي السؤال بعد┃⚡️ ❯', conn.tebakbendera[id][0])
         throw false
     }
-    let src = await (await fetch('https://raw.githubusercontent.com/socona12/TheMystic-Bot-MD/master/src/JSON/Anime-F3alya2.json')).json()
+    let src = await (await fetch('https://raw.githubusercontent.com/Hjfjckb/Kurosaki/main/Kurosaki.json')).json()
   let json = src[Math.floor(Math.random() * src.length)]
     let caption = *${command.toUpperCase()}*
   ⎔↞┃الـوقـت⏱️↞ *${(timeout / 1000).toFixed(2)} ┃
   *استخدم .انسحب للأنسحاب*
   ⎔↞┃الـجـائـزة🎖↞ ${poin} نقاط┃
-* ┃𝑇𝑅𝐴𝐹𝐴𝐿𝐺𝐴𝑅 𝐿𝐴𝛩 𝑩𝑶𝑻┃↞⎔*
+* ┃𝑩𝑶𝑻┃↞⎔*
      .trim()
     conn.tebakbendera[id] = [
         await conn.sendFile(m.chat, json.question, '', caption, m),
