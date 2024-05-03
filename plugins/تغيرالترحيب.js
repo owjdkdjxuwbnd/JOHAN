@@ -1,15 +1,11 @@
-//import db from '../lib/database.js'
-
 let handler = async (m, { conn, text, isROwner, isOwner }) => {
-  if (text) {
-    global.db.data.chats[m.chat].sWelcome = text
-    m.reply('*تــم وضــع رســالــة الــتـرحـيب !*')
-  } else throw `*أدخــل رســالــة الـتـرحــيب !*\n*عــشان تــعـمل مـنــشن أكــتب @user, عــشان تـحط أســم الـجروب أكـتب @group, عــشان تـحط وصــف أكــتب @desc*`
+if (text) {
+global.db.data.chats[m.chat].sWelcome = text
+m.reply('*تم تغيير الترحيب بنجاح. [❗]*')
+} else throw `*[❗]يرجى كتابة رساله لتغير الترحيب, استخدم:*\n*- @user (منشن الشخص الذي دخل)*\n*- @group (اسم القروب)*\n*- @desc (وصف القروب)*`
 }
-handler.help = ['setwelcome <text>']
+handler.help = ['<text> تغيرالترحيب']
 handler.tags = ['group']
-handler.command = ['الترحيب'] 
+handler.command = ['تغيرالترحيب'] 
 handler.admin = true
-handler.owner = false
-
 export default handler
