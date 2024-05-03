@@ -1,15 +1,11 @@
-//import db from '../lib/database.js'
-
-let handler = async (m, { conn, text, isROwner, isOwner }) => {
-  if (text) {
-    global.db.data.chats[m.chat].sBye = text
-    m.reply('*تـــم تـحديــث رســالــة الـوداع !*')
-  } else throw `*أدخــل الــرسالــه !*\n*أكــتب @user اذا اردت ان يــكون بــها مـنشـن !*`
+let handler = async (m, { conn, text, iwelcimesROwner, isOwner }) => {
+if (text) {
+global.db.data.chats[m.chat].sBye = text
+m.reply('*تم تغيير رسالة المغادرة بنجاح [❗]*')
+} else throw `*تم تغيير رسالة الخروج بنجاح [❗],استخدم:*\n*- @user (منشن الشخص الذي غادر)*`
 }
-handler.help = ['setbye <text>']
+handler.help = ['<text>تغيرالمغادره']
 handler.tags = ['group']
-handler.command = ['المغادره'] 
+handler.command = ['تغيرالمغادره'] 
 handler.admin = true
-handler.owner = false
-
 export default handler
