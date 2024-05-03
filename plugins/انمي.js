@@ -2,12 +2,12 @@ import translate from '@vitalets/google-translate-api'
 import { Anime } from "@shineiichijo/marika"
 const client = new Anime();
 let handler = async(m, { conn, text, usedPrefix }) => {
-if (!text) return m.reply(`*[❗] حط اسم الانمي ال انت عايز تدور عليه*`)
+if (!text) return m.reply(`*[❗] حط اسم الانمي ال انت تبغا تبحث عنه*`)
 try {  
 let anime = await client.searchAnime(text)
 let result = anime.data[0];
-let resultes = await translate(`${result.background}`, { to: 'ar', autoCorrect: true })   
-let resultes2 = await translate(`${result.synopsis}`, { to: 'ar', autoCorrect: true })   
+let resultes = await translate(`${result.background}`, { to: 'es', autoCorrect: true })   
+let resultes2 = await translate(`${result.synopsis}`, { to: 'es', autoCorrect: true })   
 let AnimeInfo = `
 🎀 • *الاسم:* ${result.title}
 🎋 • *شكل:* ${result.type}
