@@ -8,10 +8,10 @@
 ##`follow me شرح تشغيل لبوت`
 
 
-[![YouTube]()]()
+[![YouTube](https://youtube.com/@MAIKY5?si=urlYuZ0zlInNyV14)](https://youtube.com/@MAIKY5?si=urlYuZ0zlInNyV14)
 
 
-[![WhatsApp]()]()
+[![WhatsApp](https://chat.whatsapp.com/BM6tmSIPz5zJZJRJHvIHv0)](https://chat.whatsapp.com/BM6tmSIPz5zJZJRJHvIHv0)
 
 ## `creds.json لاخذ ملف`
 [![Cheems Bot](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@kofdemon87/LUFF-BOT?v=1)
