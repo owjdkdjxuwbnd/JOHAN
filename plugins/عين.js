@@ -1,30 +1,31 @@
-const timeout = 60000;
-const poin = 500;
-
-const handler = async (m, { conn }) => {
-    conn.tebakbendera = conn.tebakbendera ? conn.tebakbendera : {};
-    const id = m.chat;
+let timeout = 60000
+let poin = 500
+let handler = async (m, { conn, command, usedPrefix }) => {
+    conn.tebakbendera = conn.tebakbendera ? conn.tebakbendera : {}
+    let id = m.chat
     if (id in conn.tebakbendera) {
-        conn.reply(m.chat, '❐┃لم يتم الإجابة على السؤال بعد┃❌ ❯', conn.tebakbendera[id][0]);
-        throw false;
+        conn.reply(m.chat, '❐┃لم يتم الاجابة علي السؤال بعد┃❌ ❯', conn.tebakbendera[id][0])
+        throw false
     }
-    const response = await fetch('https://raw.githubusercontent.com/owjdkdjxuwbnd/JOHAN/master/src/JSON/%D8%A7%D8%AD%D8%B2%D8%B1.json');
-    const src = await response.json();
-    const image = src[Math.floor(Math.random() * src.length)].img;
-    const caption = ❐┃احزر ماهية الصورة!❯;
+    let src = await (await fetch('https://gist.githubusercontent.com/Kyutaka101/4e01c190b7d67225ad7a86d388eeedf6/raw/67f0de059cea4b965a3f3bf211c12fc9c48043e5/gistfile1.txt')).json()
+  let json = src[Math.floor(Math.random() * src.length)]
+    let caption = `*${command.toUpperCase()}*
+  ❐↞┇الـوقـت⏳↞ *${(timeout / 1000).toFixed(2)} ┇
+  *استخدم .انسحب للأنسحاب*
+  ❐↞┇الـجـائـزة💰↞ ${poin} نقاط┇
+『𝐴𝑌𝐴𝑁𝛩𝐾𝛩𝑈𝐽𝐼 𝐵𝛩𝑇』
+     `.trim()
     conn.tebakbendera[id] = [
-        conn.sendFile(m.chat, image, '', caption, m),
-        image,
+        await conn.sendFile(m.chat, json.img, '', caption, m),
+        json, poin,
         setTimeout(() => {
-            if (conn.tebakbendera[id])
-                conn.reply(m.chat, '⌛┃انتهى الوقت!❯', conn.tebakbendera[id][0]);
-            delete conn.tebakbendera[id];
+            if (conn.tebakbendera[id]) conn.reply(m.chat, `❮ ⌛┇انتهي الوقت┇⌛❯\n❐↞┇الاجـابـة✅↞ ${json.name}*┇`, conn.tebakbendera[id][0])
+            delete conn.tebakbendera[id]
         }, timeout)
-    ];
-};
+    ]
+}
+handler.help = ['guessflag']
+handler.tags = ['game']
+handler.command = /^عين/i
 
-handler.help = ['guesswho'];
-handler.tags = ['game'];
-handler.command = /^عين/i;
-
-module.exports = handler;
+export default handler
