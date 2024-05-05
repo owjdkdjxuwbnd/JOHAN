@@ -7,13 +7,13 @@ let handler = async (m, { conn, command, usedPrefix }) => {
         conn.reply(m.chat, '❐┃لم يتم الاجابة علي السؤال بعد┃❌ ❯', conn.tebakbendera[id][0])
         throw false
     }
-    let src = await (await fetch('https://raw.githubusercontent.com/owjdkdjxuwbnd/JOHAN/master/src/JSON/%D8%A7%D8%AD%D8%B2%D8%B1.json')).json()
+    let src = await (await fetch('https://raw.githubusercontent.com/Hjfjckb/Kurosaki/main/Kurosaki.json')).json()
   let json = src[Math.floor(Math.random() * src.length)]
     let caption = *${command.toUpperCase()}*
   ❐↞┇الـوقـت⏳↞ *${(timeout / 1000).toFixed(2)} ┇
   *استخدم .انسحب للأنسحاب*
   ❐↞┇الـجـائـزة💰↞ ${poin} نقاط┇
-*❰BY : 𝑇𝑅𝐴𝐹𝐴𝐿𝐺𝐴𝑅 𝐿𝐴𝛩🧧❱*
+*❰BY : KUROSAKI🧧❱*
      .trim()
     conn.tebakbendera[id] = [
         await conn.sendFile(m.chat, json.question, '', caption, m),
